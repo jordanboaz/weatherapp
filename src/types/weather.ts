@@ -16,6 +16,12 @@ export interface ForecastInfo {
   wind: WindInfo;
 }
 
+export interface Forecast {
+  [date_key: string]: {
+    [time_key: string]: ForecastInfo
+  }
+}
+
 export interface MainWeather {
   temp: number;
   feels_like: number;
