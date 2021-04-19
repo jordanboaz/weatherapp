@@ -1,12 +1,14 @@
 import { AppProps } from 'next/app'
-import { GlobalStyle } from '../styles/global'
+import { Provider } from 'react-redux';
+import { rootStore } from '../store/rootReducer';
+import { GlobalStyle } from '../styles/global';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <>
-    <GlobalStyle />
-
-    <Component {...pageProps} />
-  </>
+  return (
+    <Provider store={rootStore}>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </Provider>)
 }
 
 export default MyApp
