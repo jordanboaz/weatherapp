@@ -3,23 +3,16 @@ import styled from 'styled-components';
 interface ButtonProps { active?: boolean }
 
 export const Container = styled.div`
-  /* margin: 1rem 0; */
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem; */
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
-  
-
 `
 
 export const RadioItem = styled.button<ButtonProps>`
   height: 5rem;
   width: 10rem;
-  border: 1px solid #d7d7d7;
+  border: 1px solid #f04a1d;
 
   font-weight: 700;
 
@@ -31,7 +24,8 @@ export const RadioItem = styled.button<ButtonProps>`
   display: flex;
   cursor: pointer;
 
-  background: ${(props) => props.active ? '#0e7bf0' : 'white'};
+  background: ${(props) => props.active ? '#f04a1d' : 'white'};
+  color: ${(props) => props.active ? 'white' : '#f04a1d'};
 
   transition: filter 0.2s;
 
@@ -40,7 +34,7 @@ export const RadioItem = styled.button<ButtonProps>`
   }
 
   &:hover {
-    filter: brightness(0.9)
+    filter: brightness(1.2)
   }
 
 

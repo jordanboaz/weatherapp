@@ -17,6 +17,13 @@ export const Container = styled.button<ButtonProps>`
   color: ${(props) => props.active ? 'white' : '#f04a1d'};
   border-color: var(--orange-500);
 
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(1.2)
+  }
+
+
   h1 {
       font-weight: bold;
       font-size: 3rem;
