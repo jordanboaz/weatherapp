@@ -10,7 +10,7 @@ Main functionalities:
 
 ### Screenshots
 
-| <img src="/public/main.png" width="200">
+<img src="/public/main.png" width="500">
 
 ### Demo
 
