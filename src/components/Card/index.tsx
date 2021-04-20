@@ -24,15 +24,15 @@ export function Card({ data }: CardProps) {
     <Container onClick={handleClick} key={data?.key} active={data?.key === selected} data-testid="cardButton" >
       {data?.key && <h2>{dateFormatter?.format(new Date(data?.key))}</h2>}
 
-      <h1>{weatherFormatter?.format(data?.metrics?.averageTemp)}°</h1>
+      <h1>{data?.metrics?.averageTemp ? weatherFormatter?.format(data?.metrics?.averageTemp) : '-'}°</h1>
       <section>
         <div>
           <h4>Min</h4>
-          <p>{weatherFormatter?.format(data?.metrics?.tempMin)}°</p>
+          <p>{data?.metrics?.tempMin ? weatherFormatter?.format(data?.metrics?.tempMin) : '-'}°</p>
         </div>
         <div>
           <h4>Max</h4>
-          <p>{weatherFormatter?.format(data?.metrics?.tempMax)}°</p>
+          <p>{data?.metrics?.tempMax ? weatherFormatter?.format(data?.metrics?.tempMax) : '-'}°</p>
         </div>
       </section>
       <h3>
