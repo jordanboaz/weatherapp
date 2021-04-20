@@ -10,3 +10,6 @@ export const Container = styled.main`
   flex-direction: column;
 `
 
+export const RadioContainer = styled.div`
+  margin: 2rem 0 4rem;
+`
