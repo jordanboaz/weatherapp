@@ -12,7 +12,7 @@ export interface ForecastInfo {
   dt: number;
   dt_text: string;
   main: MainWeather;
-  weather: WeatherInfo;
+  weather: WeatherInfo[];
   wind: WindInfo;
 }
 
@@ -20,6 +20,21 @@ export interface Forecast {
   [date_key: string]: {
     [time_key: string]: ForecastInfo
   }
+}
+
+export interface Metrics {
+  tempMin: number;
+  tempMax: number;
+  averageHumidity: number;
+  averageTemp: number;
+  weatherModeAcc: string[],
+  weatherMode: string;
+}
+
+export interface ForecastWithAggregation {
+  key: string;
+  metrics: Metrics;
+  timeForecast: ForecastInfo[]
 }
 
 export interface MainWeather {

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdvvaa cQLQEp"
+    data-testid="cardButton"
+  >
+    <h2>
+      20 Tuesday
+    </h2>
+    <h1>
+      46.1°
+    </h1>
+    <section>
+      <div>
+        <h4>
+          Min
+        </h4>
+        <p>
+          38.3°
+        </p>
+      </div>
+      <div>
+        <h4>
+          Max
+        </h4>
+        <p>
+          55.7°
+        </p>
+      </div>
+    </section>
+    <h3>
+      Clouds
+    </h3>
+  </button>
+</DocumentFragment>
+`;
