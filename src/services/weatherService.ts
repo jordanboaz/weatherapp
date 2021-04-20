@@ -18,6 +18,7 @@ const getForecast = ({ city = "Munich,de", cnt = 40, units = 'imperial' }: Reque
   const url = '/forecast';
   const params = {
     q: city, cnt, units,
+    "Content-Type": "application/json"
   };
   return doRequest(url, params);
 };
