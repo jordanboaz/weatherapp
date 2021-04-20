@@ -34,6 +34,7 @@ const weatherSlice = createSlice({
       state.loading = false;
       state.city = action.payload.city;
       state.count = action.payload.cnt;
+      state.selectedCard = undefined;
       state.forecast = restructurePayload(action.payload.list);
     });
   },

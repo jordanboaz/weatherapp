@@ -1,4 +1,4 @@
-import { ForecastInfo, Forecast, ForecastWithAggregation } from '../types/weather'
+import { ForecastInfo, ForecastWithAggregation } from '../types/weather'
 
 export const restructurePayload = (data: ForecastInfo[]): ForecastWithAggregation[] => {
   const obj = data.reduce((acc, cur) => {
@@ -14,13 +14,13 @@ export const restructurePayload = (data: ForecastInfo[]): ForecastWithAggregatio
   }, {})
 
   const aggregated = Object.entries(obj).map(([key, timeChunk]: [key: string, timeChunk: ForecastInfo[]]) => {
-
-    const metrics = calculateMetricsAggregation(Object.values(timeChunk));
+    const timeChunkArray = Object.values(timeChunk)
+    const metrics = calculateMetricsAggregation(timeChunkArray);
 
     return {
       key,
       metrics,
-      timeForecast: timeChunk,
+      timeForecast: timeChunkArray.map((e) => ({ dt: new Date(e.dt * 1000).toLocaleTimeString(), temp: e.main.temp })),
     }
 
   })

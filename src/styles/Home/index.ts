@@ -13,3 +13,11 @@ export const Container = styled.main`
 export const RadioContainer = styled.div`
   margin: 2rem 0 4rem;
 `
+export const GraphContainer = styled.div`
+  width: 100%;
+  height: 500px;
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+ `

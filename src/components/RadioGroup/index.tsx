@@ -21,6 +21,7 @@ export function RadioGroup({ options, onChange }: RadioGroupProps) {
     <Container>
       {options.map((option, index) => (
         <RadioItem
+          key={index}
           type="button"
           active={index === selected}
           onClick={() => handleSelect(index)}
