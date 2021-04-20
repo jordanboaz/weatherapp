@@ -8,9 +8,6 @@ Main functionalities:
 3. Scroll through a list of days
 4. Select a specific day to see the temperature chart
 
-### Screenshots
-
-<img src="/public/main.png" width="500">
 
 ### Demo
 
@@ -90,5 +87,6 @@ UI components, like buttons, lists were created to avoid code duplication. The c
 - The redux connects the outworld, the API and our visual layers.
 
 
+### Screenshots
 
-
+<img src="/public/main.png" width="500">
