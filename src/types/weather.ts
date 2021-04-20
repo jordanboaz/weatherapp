@@ -34,7 +34,12 @@ export interface Metrics {
 export interface ForecastWithAggregation {
   key: string;
   metrics: Metrics;
-  timeForecast: ForecastInfo[]
+  timeForecast: TimeForecast[]
+}
+
+export interface TimeForecast {
+  dt: string;
+  temp: number;
 }
 
 export interface MainWeather {
