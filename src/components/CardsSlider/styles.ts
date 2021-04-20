@@ -10,8 +10,15 @@ interface ButtonProps {
 
 export const Container = styled.div<ContainerProps>`
  display: grid;
- grid-template-columns: 0.4fr ${(props) => `repeat(${props.numCards}, 1fr)`} 0.4fr;
  gap: 2rem;
+
+ @media (min-width: 501px) {
+  grid-template-columns: 0.4fr ${(props) => `repeat(${props.numCards}, 1fr)`} 0.4fr;
+ }
+
+ @media (max-width: 500px) {
+  grid-template-rows: 0.4fr ${(props) => `repeat(${props.numCards}, 1fr)`} 0.4fr;
+ }
 `
 
 export const Arrow = styled.button<ButtonProps>`
