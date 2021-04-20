@@ -21,6 +21,8 @@ export const GlobalStyle = createGlobalStyle`
 
   --cyan-500: #61dafb;
   --yellow-500: #eba417;
+
+  --orange-500: #f04a1d;
 }
 
  

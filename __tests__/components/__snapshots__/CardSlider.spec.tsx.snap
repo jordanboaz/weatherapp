@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardsSlider should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdvvaa hgsBXJ"
+  >
+    <button
+      class="sc-gsDJrp XloKE"
+      data-testid="leftarrow"
+      disabled=""
+    />
+    <button
+      class="sc-dkPtyc bTJfte"
+      data-testid="cardButton"
+    >
+      <h2>
+        20 Tuesday
+      </h2>
+      <h1>
+        46.1°
+      </h1>
+      <section>
+        <div>
+          <h4>
+            Min
+          </h4>
+          <p>
+            38.3°
+          </p>
+        </div>
+        <div>
+          <h4>
+            Max
+          </h4>
+          <p>
+            55.7°
+          </p>
+        </div>
+      </section>
+      <h3>
+        Clouds
+      </h3>
+    </button>
+    <button
+      class="sc-gsDJrp evzYDA"
+      data-testid="rightarrow"
+    >
+      <svg
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="9 18 15 12 9 6"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;
