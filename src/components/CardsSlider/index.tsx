@@ -50,7 +50,6 @@ export function CardsSlider({ data, cardsToShow }: CardsSliderProps) {
     setIndexesShowing(clone)
   }
 
-  console.log(indexesShowing)
   return (
     <Container numCards={cardsToShow}>
       <Arrow onClick={handleLeftArrowClick} data-testid="leftarrow" disabled={isOnFirst}>
